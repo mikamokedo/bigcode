@@ -1,0 +1,130 @@
+/* Custom styles for react-slick carousel */
+.carousel-container {
+  overflow-x: hidden;
+  padding-bottom: 16px;
+}
+
+.carousel-container .custom-dots {
+  bottom: -16px !important;
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.carousel-container .custom-dots li {
+  width: auto;
+  height: auto;
+  margin: 0;
+}
+
+.carousel-container .custom-dots li div {
+  width: 8px !important;
+  height: 8px !important;
+  background-color: #9ca3af !important;
+  border-radius: 50% !important;
+  transition: all 0.3s ease !important;
+  cursor: pointer;
+}
+
+.carousel-container .custom-dots li.slick-active div {
+  background-color: #059669 !important;
+  width: 24px !important;
+  height: 8px !important;
+  border-radius: 12px !important;
+}
+
+/* Custom Arrow Styles */
+.custom-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  border: none;
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 10;
+  transition: all 0.3s ease;
+}
+
+.custom-arrow:hover {
+  transform: translateY(-50%) scale(1.1);
+}
+
+.custom-prev-arrow {
+  left: 0px;
+}
+
+.custom-next-arrow {
+  right: 0px;
+}
+
+.arrow-image {
+  object-fit: contain;
+}
+
+.arrow-prev {
+  transform: rotate(180deg);
+}
+
+.arrow-next {
+  transform: rotate(0deg);
+}
+
+/* Hide default slick arrows */
+.carousel-container .slick-prev:before,
+.carousel-container .slick-next:before {
+  display: none;
+}
+
+.carousel-container .slick-dots {
+  position: absolute;
+}
+
+/* Scaling effect for slides */
+.carousel-container .slick-slide {
+  transition: all 0.3s ease;
+  transform: scale(0.7);
+  opacity: 0.6;
+  padding: 0 4px;
+}
+
+.carousel-container .slick-slide.slick-center {
+  transform: scale(1);
+  opacity: 1;
+  z-index: 2;
+}
+
+/* Achieve 16px visual gap with scaled slides */
+.carousel-container .slick-slide:not(.slick-center) {
+  transform: scale(0.9);
+  margin: 0 -8px;
+}
+
+.carousel-container .slick-slide.slick-center {
+  margin: 0 -8px;
+  z-index: 10;
+}
+
+.carousel-container .slide-item {
+  transition: all 0.3s ease;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+/* Ensure proper overflow handling */
+.carousel-container .slick-list {
+  overflow: visible;
+}
+
+.carousel-container .slick-track {
+  display: flex;
+  align-items: center;
+}
