@@ -18,6 +18,18 @@ export default {
           "sans-serif",
         ],
       },
+      colors: {
+        primary: {
+          DEFAULT: "#00833E",
+          light: "#FFB3B3",
+          dark: "#B30000",
+        },
+        secondary: {
+          DEFAULT: "#3CB371",
+          light: "#A3D9B5",
+          dark: "#007A5E",
+        },
+      },
     },
   },
   plugins: [],

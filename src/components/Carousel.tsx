@@ -40,7 +40,7 @@ interface CarouselProps {
 }
 
 // Custom Arrow Components
-const CustomPrevArrow = (props: any) => {
+export const CustomPrevArrow = (props: any) => {
   const { onClick } = props;
   return (
     <button className="custom-arrow custom-prev-arrow" onClick={onClick} aria-label="Previous slide">
@@ -49,7 +49,7 @@ const CustomPrevArrow = (props: any) => {
   );
 };
 
-const CustomNextArrow = (props: any) => {
+export const CustomNextArrow = (props: any) => {
   const { onClick } = props;
   return (
     <button className="custom-arrow custom-next-arrow" onClick={onClick} aria-label="Next slide">
@@ -93,7 +93,7 @@ export const Carousel: React.FC<CarouselProps> = ({ arrow = false, dots = true, 
   };
 
   return (
-    <div className="max-w-6xl mx-auto carousel-container w-full">
+    <div className="max-w-6xl mx-auto carousel-container carousel-container-main w-full">
       <Slider {...settings}>
         {slidesData.map((slide) => (
           <div key={slide.id}>
