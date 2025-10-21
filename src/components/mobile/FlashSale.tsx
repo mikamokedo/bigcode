@@ -1,5 +1,5 @@
-import { CarouselProduct } from "../CarouselProduct";
 import "./FlashSale.css";
+import { SlideBarMobile } from "./SlideBar";
 
 const listRender = Array.from({ length: 8 }).map((_, i) => ({
   id: i + 1,
@@ -17,10 +17,10 @@ export const FlashSale = () => {
       </div>
 
       <div className="bg-[#f7faf3]">
-        <CarouselProduct arrow={false} slidesToShow={2}>
+        <SlideBarMobile slidesToShow={3}>
           {listRender.map((item) => {
             return (
-              <div key={item.id}>
+              <div key={item.id} style={{ width: 152 }}>
                 <div className="product-cart flex flex-col gap-[12px]">
                   <div className="rounded-[8px] w-[152px]  bg-[#fff]">
                     <img
@@ -72,7 +72,7 @@ export const FlashSale = () => {
               </div>
             );
           })}
-        </CarouselProduct>
+        </SlideBarMobile>
       </div>
     </div>
   );

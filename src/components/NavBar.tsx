@@ -72,7 +72,7 @@ export const NavBar = () => {
       <div className="flex flex-col gap-[16px] px-[8px]">
         {listSuggest.map((item, index) => {
           return (
-            <div key={index} className="flex items-center gap-[12px]">
+            <div key={index} className="flex items-center gap-[12px] cursor-pointer hover:opacity-80">
               {item.image ? (
                 <img src={item.image} className="h-[40px] w-[40px] object-cover rounded-full" alt="" />
               ) : (
