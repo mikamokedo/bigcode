@@ -26,7 +26,6 @@ const SiteFooter: React.FC = () => {
             </div>
           </div>
 
-          {/* <div className="md:col-span-6 grid grid-cols-3 gap-6"> */}
           <div className="flex flex-col gap-[12px]">
             <div className="text-sm font-semibold text-gray-800 mb-3 text-[16px] font-[500] text-[#333333]">
               Về Chợ Thông Minh
@@ -77,14 +76,12 @@ const SiteFooter: React.FC = () => {
               <li>Chính sách bồi thường</li>
             </ul>
           </div>
-          {/* </div> */}
 
           <div className="flex flex-col items-start gap-[22px]">
             <div className="text-sm font-semibold text-gray-800 text-[16px] font-[500] text-[#333333]">
               Kết nối với chúng tôi
             </div>
             <div className="flex gap-[12px] items-center">
-              {/* simple social icons */}
               <a
                 href="#"
                 aria-label="facebook"

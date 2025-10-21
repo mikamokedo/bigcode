@@ -60,17 +60,21 @@ export const HomeDesktop = () => {
             <ProductPromoCarousel arrow autoplay={false} arrowPosition="left" />
             <div className="py-8">
               <h2 className="text-[20px] text-[#1A1A1A] font-bold mb-6">Featured categories</h2>
-              <CarouselProduct dots>
-                {productsData.map((product) => (
-                  <div key={product.id} className="px-2">
-                    <div className="product-card bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow duration-300">
-                      <div className="product-image-container h-48 relative rounded-[12px]">
-                        <img src={product.image} alt={product.title} className="w-full h-full object-cover" />
+              <div className="relative rounded-[8px] overflow-hidden">
+                <div className={`z-10 h-[calc(100%-20px)] w-[80px] right-[0px] bg-[linear-gradient(90deg,#FFFFFF_0%,rgba(255,255,255,0)_100%)] absolute rounded-l-[8px] left-[0px]`}></div>
+                <div className={`z-10 h-[calc(100%-20px)] w-[80px] right-[0px] bg-[linear-gradient(270deg,#FFFFFF_0%,rgba(255,255,255,0)_100%)] absolute rounded-r-[8px] right-[0px]`}></div>
+                <CarouselProduct dots>
+                  {productsData.map((product) => (
+                    <div key={product.id} className="px-2">
+                      <div className="product-card bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow duration-300">
+                        <div className="product-image-container h-48 relative rounded-[12px]">
+                          <img src={product.image} alt={product.title} className="w-full h-full object-cover" />
+                        </div>
                       </div>
                     </div>
-                  </div>
-                ))}
-              </CarouselProduct>
+                  ))}
+                </CarouselProduct>
+              </div>
             </div>
             <Carousel arrow />
             <Suggestions />

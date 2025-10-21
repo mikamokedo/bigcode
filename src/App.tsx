@@ -5,8 +5,8 @@ import { HomeMobile } from "./pages/home-mobile";
 function App() {
   return (
     <div>
-      {/* <HomeDesktop /> */}
-      <HomeMobile/>
+      <HomeDesktop />
+      {/* <HomeMobile/> */}
     </div>
   );
 }

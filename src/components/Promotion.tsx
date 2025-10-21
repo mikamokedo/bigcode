@@ -29,8 +29,8 @@ export const Promotion: React.FC<PromotionType> = ({ arrowPosition }) => {
   return (
     <section className="flex flex-col gap-[16px]">
       <div className="font-[600] text-[#1A1A1A] text-[20px]">Chương trình khuyến mại</div>
-      <div className="w-full relative">
-        <div className="h-full w-[80px] right-[0px] bg-[linear-gradient(270deg,#FFFFFF_0%,rgba(255,255,255,0)_100%)] absolute "></div>
+      <div className="w-full relative  rounded-[8px] overflow-hidden">
+        <div className={`h-[calc(100%-16px)] z-10 w-[80px] right-[0px] bg-[linear-gradient(270deg,#FFFFFF_0%,rgba(255,255,255,0)_100%)] absolute top-[0px] rounded-r-[8px] ${arrowPosition ? (arrowPosition == 'left' ? 'left-[0px] transform scale-x-[-1]' : 'right-[0px]') : ''}`}></div>
         <CarouselProduct slidesToShow={5} arrowPosition={arrowPosition}>
           {demoProducts.map((p) => (
             <div className="" key={p.id}>

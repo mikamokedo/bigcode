@@ -1,5 +1,4 @@
 import React from "react";
-import { ChevronDoubleUpIcon } from "@heroicons/react/24/solid";
 
 export const Header: React.FC = () => {
     return (
@@ -25,7 +24,7 @@ export const Header: React.FC = () => {
                 />
                 <img src="/src/assets/searchMB.svg" className="absolute top-[50%] translate-y-[-50%] left-[10px]" alt="" />
             </div>
-            <img src="assets/headerMB.jpg" className="transform scale-x-[-1] opacity-25 absolute top-[0px] left-[0px] w-full h-full inset-0 object-cover z-0" alt="" />
+            <img src="/assets/headerMB.jpg" className="transform scale-x-[-1] opacity-25 absolute top-[0px] left-[0px] w-full h-full inset-0 object-cover z-0" alt="" />
         </div>
     )
 }

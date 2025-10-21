@@ -21,7 +21,7 @@ export const OutstandingProduct = ({title}: Props) => {
                 <div className="grid grid-cols-2 gap-[12px]">
                     {list.map((item) => {
                         return (
-                            <div className="rounded-[8px]  bg-[#fff]">
+                            <div key={item.id} className="rounded-[8px]  bg-[#fff]">
                                 <div className="relative">
                                     <img src="assets/slide-bar3MB.png" className="object-cover h-[164px] w-full rounded-t-[8px]" alt="" />
                                     {item.isBestSell && (
