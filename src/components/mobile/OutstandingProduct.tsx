@@ -11,7 +11,7 @@ interface Props {
 
 export const OutstandingProduct = ({ title }: Props) => {
   return (
-    <div className="flex flex-col gap-[12px] mb-[8px]">
+    <div className="flex flex-col gap-[12px] mb-[8px] px-[12px]">
       <div className="flex items-center gap-[8px]">
         <img src="/assets/bellFlashSaleMB.svg" alt="" />
         <div className="text-[16px] font-[700]">{title}</div>
@@ -52,7 +52,9 @@ export const OutstandingProduct = ({ title }: Props) => {
         </div>
       </div>
       <div className="flex justify-center">
-        <div className="text-[14px] font-[700] text-[#4976BA] text-center leading-[20px] cursor-pointer hover:underline">Xem thêm</div>
+        <div className="text-[14px] font-[700] text-[#4976BA] text-center leading-[20px] cursor-pointer hover:underline">
+          Xem thêm
+        </div>
       </div>
     </div>
   );

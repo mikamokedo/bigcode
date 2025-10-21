@@ -1,6 +1,6 @@
 export const Banner = () => {
   return (
-    <div className="grid-cols-2 grid gap-[12px]">
+    <div className="grid-cols-2 grid gap-[12px] px-[12px]">
       <div className="relative overflow-hidden bg-[#FFAD3B] py-[4px] px-[8px] rounded-t-[4px] h-[75px]">
         <div className="text-[12px] font-[700] text-[#333333]">
           Tên nhóm danh mục <br /> thiết yếu
