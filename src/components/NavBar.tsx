@@ -1,10 +1,10 @@
 const listSuggest: { image: string; label: string }[] = [
   {
-    image: "/src/assets/ellipse1.svg",
+    image: "/assets/ellipse1.svg",
     label: "Rau củ quả",
   },
   {
-    image: "/src/assets/ellipse2.svg",
+    image: "/assets/ellipse2.svg",
     label: "Thủy sản, hải sản",
   },
   {

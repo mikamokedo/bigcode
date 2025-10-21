@@ -2,7 +2,7 @@ import React from "react";
 
 const listNews = Array.from({ length: 4 }).map((_, i) => ({
   id: i + 1,
-  image: "/src/assets/imageNews.png",
+  image: "/assets/imageNews.png",
   time: "16:59, 20/08/2025",
   content: "Dịch vụ đi chợ thuê tại TP.HCM giải pháp cho người bận rộn",
 }));
