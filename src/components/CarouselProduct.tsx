@@ -10,6 +10,8 @@ interface CarouselProductProps {
   arrow?: boolean;
   dots?: boolean;
   autoplay?: boolean;
+  arrowPosition?: 'left' | 'right',
+  slidesToShow?: number
 }
 
 export const CarouselProduct: FC<PropsWithChildren<CarouselProductProps>> = ({
@@ -17,19 +19,21 @@ export const CarouselProduct: FC<PropsWithChildren<CarouselProductProps>> = ({
   dots = false,
   autoplay = false,
   children,
+  arrowPosition,
+  slidesToShow = 4
 }) => {
   const settings = {
     dots: dots,
     infinite: true,
     speed: 500,
-    slidesToShow: 4,
+    slidesToShow: slidesToShow,
     slidesToScroll: 1,
     autoplay: autoplay,
     autoplaySpeed: 3000,
     pauseOnHover: true,
     arrows: arrow,
-    prevArrow: arrow ? <CustomPrevArrow /> : undefined,
-    nextArrow: arrow ? <CustomNextArrow /> : undefined,
+    prevArrow: arrow && !arrowPosition ? <CustomPrevArrow /> : arrowPosition == 'left' ? <CustomPrevArrow /> : undefined,
+    nextArrow: arrow && !arrowPosition ? <CustomNextArrow /> : arrowPosition == 'right' ? <CustomNextArrow /> :  undefined,
     customPaging: () => <div></div>,
     dotsClass: "slick-dots custom-dots",
     responsive: [
