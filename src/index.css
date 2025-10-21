@@ -15,8 +15,9 @@
 }
 
 .container-mobile {
-  max-width: 375px;
+  max-width: 680px;
   margin: 0 auto;
+  width: 100%;
 }
 
 ul {
