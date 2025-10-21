@@ -78,9 +78,9 @@ export const Header = () => {
       >
         {
           activeIndex === 0 ? (
-            <img src="/src/assets/shoppingCartHeader.svg" className="absolute w-[350px] h-[350px] top-[-120px] right-[-40px] opacity-50" alt="" />
+            <img src="/assets/shoppingCartHeader.svg" className="absolute w-[350px] h-[350px] top-[-120px] right-[-40px] opacity-50" alt="" />
           ) : (
-            <img src="/src/assets/hotDogHeader.svg" className="absolute w-[350px] h-[350px] top-[-120px] right-[-40px] opacity-50" alt="" />
+            <img src="/assets/hotDogHeader.svg" className="absolute w-[350px] h-[350px] top-[-120px] right-[-40px] opacity-50" alt="" />
           )
         }
         <div className="container flex gap-[29px] h-full">

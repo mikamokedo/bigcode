@@ -35,7 +35,7 @@ export const OutstandingProduct = ({ title }: Props) => {
                   )}
                   <img
                     src="/assets/vectorMB.svg"
-                    className="absolute p-[6px] rounded-full bottom-[8px] right-[4px] bg-[#4d8207]"
+                    className="absolute p-[6px] rounded-full bottom-[8px] right-[4px] bg-[#4d8207] cursor-pointer"
                     alt=""
                   />
                 </div>
@@ -51,7 +51,9 @@ export const OutstandingProduct = ({ title }: Props) => {
           })}
         </div>
       </div>
-      <div className="text-[14px] font-[700] text-[#4976BA] text-center leading-[20px] cursor-pointer">Xem thêm</div>
+      <div className="flex justify-center">
+        <div className="text-[14px] font-[700] text-[#4976BA] text-center leading-[20px] cursor-pointer hover:underline">Xem thêm</div>
+      </div>
     </div>
   );
 };

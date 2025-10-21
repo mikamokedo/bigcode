@@ -13,7 +13,7 @@ export const FlashSale = () => {
           <img src="/assets/bellFlashSaleMB.svg" alt="" />
           <div className="text-[16px] font-[700] text-[#C91432]">FLASH SALE</div>
         </div>
-        <img src="/assets/nextArrowMB.svg" alt="" />
+        <img src="/assets/nextArrowMB.svg" className="cursor-pointer" alt="" />
       </div>
 
       <div className="bg-[#f7faf3]">
