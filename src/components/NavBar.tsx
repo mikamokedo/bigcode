@@ -1,5 +1,3 @@
-import React from "react";
-
 const listSuggest: { image: string; label: string }[] = [
   {
     image: "/src/assets/ellipse1.svg",
