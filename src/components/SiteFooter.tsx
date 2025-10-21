@@ -31,13 +31,13 @@ const SiteFooter: React.FC = () => {
               Về Chợ Thông Minh
             </div>
             <ul className="text-sm text-gray-600 space-y-2 text-[14px] text-[#333333] flex flex-col gap-[4px]">
-              <li>Thông tin liên hệ</li>
-              <li>Đi chợ</li>
-              <li>Đặt đồ ăn</li>
-              <li>Tuyển dụng việc làm</li>
-              <li>Tin tức</li>
-              <li>Hotline: 1900 8099</li>
-              <li>Email: hotro@gober.com.vn</li>
+              <li className="hover:underline cursor-pointer">Thông tin liên hệ</li>
+              <li className="hover:underline cursor-pointer">Đi chợ</li>
+              <li className="hover:underline cursor-pointer">Đặt đồ ăn</li>
+              <li className="hover:underline cursor-pointer">Tuyển dụng việc làm</li>
+              <li className="hover:underline cursor-pointer">Tin tức</li>
+              <li className="hover:underline cursor-pointer">Hotline: 1900 8099</li>
+              <li className="hover:underline cursor-pointer">Email: hotro@gober.com.vn</li>
             </ul>
           </div>
 
@@ -46,22 +46,22 @@ const SiteFooter: React.FC = () => {
               Danh mục sản phẩm
             </div>
             <ul className="text-sm text-gray-600 space-y-2 text-[14px] text-[#333333] flex flex-col gap-[4px]">
-              <li>Rau củ quả</li>
-              <li>Thịt tươi</li>
-              <li>Thủy sản, hải sản</li>
-              <li>Dầu ăn, nước chấm</li>
-              <li>Rau củ quả</li>
-              <li>Thịt tươi</li>
-              <li>Thủy sản, hải sản</li>
-              <li>Dầu ăn, nước chấm</li>
-              <li>Rau củ quả</li>
-              <li>Thịt tươi</li>
-              <li>Thủy sản, hải sản</li>
-              <li>Dầu ăn, nước chấm</li>
-              <li>Rau củ quả</li>
-              <li>Thịt tươi</li>
-              <li>Thủy sản, hải sản</li>
-              <li>Dầu ăn, nước chấm</li>
+              <li className="hover:underline cursor-pointer">Rau củ quả</li>
+              <li className="hover:underline cursor-pointer">Thịt tươi</li>
+              <li className="hover:underline cursor-pointer">Thủy sản, hải sản</li>
+              <li className="hover:underline cursor-pointer">Dầu ăn, nước chấm</li>
+              <li className="hover:underline cursor-pointer">Rau củ quả</li>
+              <li className="hover:underline cursor-pointer">Thịt tươi</li>
+              <li className="hover:underline cursor-pointer">Thủy sản, hải sản</li>
+              <li className="hover:underline cursor-pointer">Dầu ăn, nước chấm</li>
+              <li className="hover:underline cursor-pointer">Rau củ quả</li>
+              <li className="hover:underline cursor-pointer">Thịt tươi</li>
+              <li className="hover:underline cursor-pointer">Thủy sản, hải sản</li>
+              <li className="hover:underline cursor-pointer">Dầu ăn, nước chấm</li>
+              <li className="hover:underline cursor-pointer">Rau củ quả</li>
+              <li className="hover:underline cursor-pointer">Thịt tươi</li>
+              <li className="hover:underline cursor-pointer">Thủy sản, hải sản</li>
+              <li className="hover:underline cursor-pointer">Dầu ăn, nước chấm</li>
             </ul>
           </div>
 
@@ -70,10 +70,10 @@ const SiteFooter: React.FC = () => {
               Khách hàng cá nhân
             </div>
             <ul className="text-sm text-gray-600 space-y-2 text-[14px] text-[#333333] flex flex-col gap-[4px]">
-              <li>Chính sách bảo mật</li>
-              <li>Điều khoản điều kiện</li>
-              <li>Quy định khiếu nại</li>
-              <li>Chính sách bồi thường</li>
+              <li className="hover:underline cursor-pointer">Chính sách bảo mật</li>
+              <li className="hover:underline cursor-pointer">Điều khoản điều kiện</li>
+              <li className="hover:underline cursor-pointer">Quy định khiếu nại</li>
+              <li className="hover:underline cursor-pointer">Chính sách bồi thường</li>
             </ul>
           </div>
 

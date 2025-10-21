@@ -70,41 +70,46 @@ export const Header = () => {
       </div>
       <div className="border-b-1 border-[#808080]"></div>
       <div
-        className={`h-[64px] ${
+        className={`h-[64px] relative overflow-hidden ${
           activeIndex === 0
-            ? "bg-[linear-gradient(90deg,_#FFFFFF_25%,_#57FFA7_100%)]"
-            : "bg-[linear-gradient(90deg,_#FFFFFF_25%,_#FFB49C_100%)]"
-        }`}
+          ? "bg-[linear-gradient(90deg,_#FFFFFF_25%,_#57FFA7_100%)]"
+          : "bg-[linear-gradient(90deg,_#FFFFFF_25%,_#FFB49C_100%)]"
+          }`}
       >
-        <div className="bg-header-tab ">
-          <div className="container flex gap-[29px] h-full">
-            <div className="w-[272px] overflow-hidden">
-              <div className="flex items-center animate-slide-left-right">
-                <img src="/assets/animation-2.png" alt="" />
-                <img src="/assets/animation-1.png" alt="" />
-              </div>
+        {
+          activeIndex === 0 ? (
+            <img src="/src/assets/shoppingCartHeader.svg" className="absolute w-[350px] h-[350px] top-[-120px] right-[-40px] opacity-50" alt="" />
+          ) : (
+            <img src="/src/assets/hotDogHeader.svg" className="absolute w-[350px] h-[350px] top-[-120px] right-[-40px] opacity-50" alt="" />
+          )
+        }
+        <div className="container flex gap-[29px] h-full">
+          <div className="w-[272px] overflow-hidden">
+            <div className="flex items-center animate-slide-left-right">
+              <img src="/assets/animation-2.png" alt="" />
+              <img src="/assets/animation-1.png" alt="" />
             </div>
-            <div className="flex gap-[29px]">
-              <div className="flex flex-col justify-between cursor-pointer" onClick={() => setActiveIndex(0)}>
-                <div className="flex gap-[8px] items-center">
-                  <img src="/assets/shoppingCartHeader.svg" alt="" />
-                  <div>
-                    <span className="text-[12px] text-[#666666] font-[500]">Hôm nay ăn gì?</span>
-                    <div className="text-[16px] text-[#1A1A1A] font-[500]">Đi chợ</div>
-                  </div>
+          </div>
+          <div className="flex gap-[29px]">
+            <div className="flex flex-col justify-between cursor-pointer" onClick={() => setActiveIndex(0)}>
+              <div className="flex gap-[8px] items-center">
+                <img src="/assets/shoppingCartHeader.svg" alt="" />
+                <div>
+                  <span className="text-[12px] text-[#666666] font-[500]">Hôm nay ăn gì?</span>
+                  <div className="text-[16px] text-[#1A1A1A] font-[500]">Đi chợ</div>
                 </div>
-                {activeIndex === 0 && <div className="w-full h-[4px] bg-[#00833E] rounded-t-full"></div>}
               </div>
-              <div className="flex flex-col justify-between cursor-pointer" onClick={() => setActiveIndex(1)}>
-                <div className="flex gap-[8px] items-center">
-                  <img src="/assets/hotDogHeader.svg" alt="" />
-                  <div>
-                    <span className="text-[12px] text-[#666666] font-[500]">Menu hấp dẫn</span>
-                    <div className="text-[16px] text-[#1A1A1A] font-[500]">Đặt đồ ăn</div>
-                  </div>
+              {activeIndex === 0 && <div className="w-full h-[4px] bg-[#00833E] rounded-t-full"></div>}
+            </div>
+            <div className="flex flex-col justify-between cursor-pointer" onClick={() => setActiveIndex(1)}>
+              <div className="flex gap-[8px] items-center">
+                <img src="/assets/hotDogHeader.svg" alt="" />
+                <div>
+                  <span className="text-[12px] text-[#666666] font-[500]">Menu hấp dẫn</span>
+                  <div className="text-[16px] text-[#1A1A1A] font-[500]">Đặt đồ ăn</div>
                 </div>
-                {activeIndex === 1 && <div className="w-full h-[4px] bg-[#FF6F3C] rounded-t-full"></div>}
               </div>
+              {activeIndex === 1 && <div className="w-full h-[4px] bg-[#FF6F3C] rounded-t-full"></div>}
             </div>
           </div>
         </div>

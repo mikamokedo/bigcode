@@ -27,7 +27,7 @@ export const OutstandingProduct = ({title}: Props) => {
                                     {item.isBestSell && (
                                         <div className="text-[10px] text-[white] absolute top-[4px] left-[4px] py-[4px] px-[8px] rounded-[4px] bg-[#4d8207]">Bán chạy</div>
                                     )}
-                                    <img src="/src/assets/vectorMB.svg" className="absolute p-[6px] rounded-full bottom-[8px] right-[4px] bg-[#4d8207]" alt="" />
+                                    <img src="/src/assets/vectorMB.svg" className="absolute p-[6px] rounded-full bottom-[8px] right-[4px] bg-[#4d8207] cursor-pointer" alt="" />
                                 </div>
                                 <div className="flex flex-col gap-[4px] py-[4px] px-[8px]">
                                     <div className="text-[14px] font-[600] leading-[20px] text-[#666666]">Tên sản phẩm của cửa hàng</div>
@@ -40,7 +40,9 @@ export const OutstandingProduct = ({title}: Props) => {
 
                 </div>
             </div>
-            <div className="text-[14px] font-[700] text-[#4976BA] text-center leading-[20px] cursor-pointer">Xem thêm</div>
+            <div className="flex justify-center">
+                <div className="text-[14px] font-[700] text-[#4976BA] text-center leading-[20px] cursor-pointer hover:underline">Xem thêm</div>
+            </div>
         </div>
     )
 }
