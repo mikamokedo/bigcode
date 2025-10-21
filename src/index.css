@@ -40,3 +40,10 @@ ul {
 .animate-slide-left-right {
   animation: slideLeftRight 3s ease-in-out infinite;
 }
+
+.bg-header-tab {
+  background-image: url("/assets/cart-bg.png");
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-blend-mode: multiply;
+}
