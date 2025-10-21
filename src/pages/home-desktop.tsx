@@ -50,30 +50,32 @@ export const HomeDesktop = () => {
     <div className="min-h-screen">
       <GotoTop />
       <Header />
-      <div className="flex gap-[20px] container mx-auto px-4 py-8 space-y-8">
-        <NavBar />
-        <div className="w-[calc(100%-288px)] flex flex-col gap-[16px]">
-          <Carousel />
-          <FlashSale />
-          <Promotion arrowPosition="right" />
-          <Promotion arrowPosition="left" />
-          <ProductPromoCarousel arrow autoplay={false} arrowPosition="left" />
-          <div className="py-8">
-            <h2 className="text-[20px] text-[#1A1A1A] font-bold mb-6">Featured categories</h2>
-            <CarouselProduct dots>
-              {productsData.map((product) => (
-                <div key={product.id} className="px-2">
-                  <div className="product-card bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow duration-300">
-                    <div className="product-image-container h-48 relative rounded-[12px]">
-                      <img src={product.image} alt={product.title} className="w-full h-full object-cover" />
+      <div className="bg-[#f2f9f5]">
+        <div className="flex gap-[20px] container mx-auto px-4 py-8 space-y-8 py-[16px]">
+          <NavBar />
+          <div className="w-[calc(100%-288px)] flex flex-col gap-[16px]">
+            <Carousel />
+            <FlashSale />
+            <Promotion arrowPosition="right" />
+            <Promotion arrowPosition="left" />
+            <ProductPromoCarousel arrow autoplay={false} arrowPosition="left" />
+            <div className="py-8">
+              <h2 className="text-[20px] text-[#1A1A1A] font-bold mb-6">Featured categories</h2>
+              <CarouselProduct dots>
+                {productsData.map((product) => (
+                  <div key={product.id} className="px-2">
+                    <div className="product-card bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow duration-300">
+                      <div className="product-image-container h-48 relative rounded-[12px]">
+                        <img src={product.image} alt={product.title} className="w-full h-full object-cover" />
+                      </div>
                     </div>
                   </div>
-                </div>
-              ))}
-            </CarouselProduct>
+                ))}
+              </CarouselProduct>
+            </div>
+            <Carousel arrow />
+            <Suggestions />
           </div>
-          <Carousel />
-          <Suggestions />
         </div>
       </div>
       <SmartMarketNews />
