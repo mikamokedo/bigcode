@@ -66,7 +66,7 @@ export const ProductPromoCarousel: React.FC<PromotionProps> = () => {
                         <div className="text-[14px] text-[#808080] font-[600] line-through">{p.oldPrice}</div>
                       </div>
                       <div className="w-[32px] h-[32px] cursor-pointer">
-                        <img src="/src/assets/plusCircle.svg" alt="" />
+                        <img src="/assets/plusCircle.svg" alt="" />
                       </div>
                     </div>
                   </div>
@@ -76,7 +76,7 @@ export const ProductPromoCarousel: React.FC<PromotionProps> = () => {
           </CarouselProduct>
         </div>
         <div className="cursor-pointer h-[calc(100%-4px)] shadow-[0px_1px_1px_0px_rgba(0,0,0,0.14)] w-full flex flex-col justify-center items-center rounded-[4px]">
-          <img src="/src/assets/shoppingCartProductPromo.svg" alt="" />
+          <img src="/assets/shoppingCartProductPromo.svg" alt="" />
           <div className="text-[14px] font-[600] text-[#1E88E5] hover:underline cursor-pointer">Xem thêm sản phẩm</div>
         </div>
       </div>

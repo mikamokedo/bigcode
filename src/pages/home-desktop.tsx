@@ -14,31 +14,31 @@ import MarketInfo from "../components/MarketInfo";
 const productsData = [
   {
     id: 1,
-    image: "/src/assets/featruedCategories1.svg",
+    image: "/assets/featruedCategories1.svg",
     title: "Stylish Jacket",
     discount: "20% OFF",
   },
   {
     id: 2,
-    image: "/src/assets/featruedCategories2.svg",
+    image: "/assets/featruedCategories2.svg",
     title: "Running Shoes",
     discount: "15% OFF",
   },
   {
     id: 3,
-    image: "/src/assets/featruedCategories3.svg",
+    image: "/assets/featruedCategories3.svg",
     title: "Smart Watch",
     discount: "10% OFF",
   },
   {
     id: 4,
-    image: "/src/assets/featruedCategories4.svg",
+    image: "/assets/featruedCategories4.svg",
     title: "Wireless Earbuds",
     discount: "25% OFF",
   },
   {
     id: 5,
-    image: "/src/assets/featruedCategories4.svg",
+    image: "/assets/featruedCategories4.svg",
     title: "Designer Handbag",
     discount: "30% OFF",
   },

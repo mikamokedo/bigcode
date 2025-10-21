@@ -13,17 +13,17 @@ interface SlideData {
 const slidesData: SlideData[] = [
   {
     id: 1,
-    image: "/src/assets/carousel1.png",
+    image: "/assets/carousel1.png",
     alt: "Promotional slide 1",
   },
   {
     id: 2,
-    image: "/src/assets/carousel2.png",
+    image: "/assets/carousel2.png",
     alt: "Promotional slide 2",
   },
   {
     id: 3,
-    image: "/src/assets/carousel3.png",
+    image: "/assets/carousel3.png",
     alt: "Promotional slide 3",
   },
 ];
@@ -39,7 +39,7 @@ export const CustomPrevArrow = (props: any) => {
   const { onClick } = props;
   return (
     <button className="custom-arrow custom-prev-arrow" onClick={onClick} aria-label="Previous slide">
-      <img src="/src/assets/dot-arrow-right.png" alt="Previous" className="arrow-image arrow-prev" />
+      <img src="/assets/dot-arrow-right.png" alt="Previous" className="arrow-image arrow-prev" />
     </button>
   );
 };
@@ -48,7 +48,7 @@ export const CustomNextArrow = (props: any) => {
   const { onClick } = props;
   return (
     <button className="custom-arrow custom-next-arrow" onClick={onClick} aria-label="Next slide">
-      <img src="/src/assets/dot-arrow-right.png" alt="Next" className="arrow-image arrow-next" />
+      <img src="/assets/dot-arrow-right.png" alt="Next" className="arrow-image arrow-next" />
     </button>
   );
 };
@@ -90,7 +90,7 @@ export const Carousel: React.FC<CarouselProps> = ({ arrow = false, dots = true, 
   return (
     <div className="max-w-6xl mx-auto carousel-container carousel-container-main w-full relative">
       <div className="absolute left-0 top-0 h-full w-16 bg-gradient-to-r from-white to-transparent z-10 pointer-events-none"></div>
-    <div className="absolute right-0 top-0 h-full w-16 bg-gradient-to-l from-white to-transparent z-10 pointer-events-none"></div>
+      <div className="absolute right-0 top-0 h-full w-16 bg-gradient-to-l from-white to-transparent z-10 pointer-events-none"></div>
       <Slider {...settings}>
         {slidesData.map((slide) => (
           <div key={slide.id}>

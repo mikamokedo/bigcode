@@ -27,7 +27,7 @@ export const FlashSale = () => {
       <div className="w-full">
         <header className="flex justify-between mb-[16px] items-end">
           <div className="flex gap-[8px]">
-            <img src="/src/assets/ThumbsUp(1).gif" alt="thumbs up" className="w-[32px] h-[30px]" />
+            <img src="/assets/ThumbsUp(1).gif" alt="thumbs up" className="w-[32px] h-[30px]" />
             <div className="text-[28px] text-[#B3261E] font-[600]">FLASH SALE</div>
           </div>
           <div>

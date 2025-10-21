@@ -52,7 +52,7 @@ export const Suggestions: React.FC = () => {
                       <div className="text-[14px] text-[#808080] font-[600] line-through">{p.oldPrice}</div>
                     </div>
                     <div className="w-[32px] h-[32px] cursor-pointer">
-                      <img src="/src/assets/plusCircle.svg" alt="" />
+                      <img src="/assets/plusCircle.svg" alt="" />
                     </div>
                   </div>
                 </div>
@@ -63,7 +63,7 @@ export const Suggestions: React.FC = () => {
       </div>
       <div className="flex justify-center">
         <button className="px-[50px] py-[10px] border-none bg-inherit text-[14px] font-[600] text-[#1E88E5] flex items-center cursor-pointer hover:underline cursor-pointer">
-          Xem thêm 10 sản phẩm <img src="/src/assets/chevronDown.svg" alt="" />{" "}
+          Xem thêm 10 sản phẩm <img src="/assets/chevronDown.svg" alt="" />{" "}
         </button>
       </div>
     </div>
