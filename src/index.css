@@ -13,3 +13,9 @@
   max-width: 1216px;
   margin: 0 auto;
 }
+
+ul {
+    list-style: none; 
+    margin: 0;
+    padding: 0; 
+}

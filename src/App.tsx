@@ -3,7 +3,7 @@ import { HomeDesktop } from "./pages/home-desktop";
 
 function App() {
   return (
-    <div className="container">
+    <div>
       <HomeDesktop />
     </div>
   );

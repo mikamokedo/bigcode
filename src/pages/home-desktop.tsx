@@ -3,35 +3,43 @@ import { Header } from "../components/Header";
 import { Carousel } from "../components/Carousel";
 import { CarouselProduct } from "../components/CarouselProduct";
 import { GotoTop } from "../components/GotoTop";
+import { NavBar } from "../components/NavBar";
+import { FlashSale } from "../components/FlashSale";
+import { Promotion } from "../components/Promotion";
+import { ProductPromoCarousel } from "../components/ProductPromoCarousel";
+import { Suggestions } from "../components/Suggestions";
+import { Footer } from "../components/Footer";
+import { SmartMarketNews } from "../components/SmartMarketNews";
+import MarketInfo from "../components/MarketInfo";
 
 const productsData = [
   {
     id: 1,
-    image: "https://placehold.co/300x300/FF6347/FFFFFF?text=Product+1",
+    image: "/src/assets/featruedCategories1.svg",
     title: "Stylish Jacket",
     discount: "20% OFF",
   },
   {
     id: 2,
-    image: "https://placehold.co/300x300/3CB371/FFFFFF?text=Product+2",
+    image: "/src/assets/featruedCategories2.svg",
     title: "Running Shoes",
     discount: "15% OFF",
   },
   {
     id: 3,
-    image: "https://placehold.co/300x300/1E90FF/FFFFFF?text=Product+3",
+    image: "/src/assets/featruedCategories3.svg",
     title: "Smart Watch",
     discount: "10% OFF",
   },
   {
     id: 4,
-    image: "https://placehold.co/300x300/FFD700/FFFFFF?text=Product+4",
+    image: "/src/assets/featruedCategories4.svg",
     title: "Wireless Earbuds",
     discount: "25% OFF",
   },
   {
     id: 5,
-    image: "https://placehold.co/300x300/FF69B4/FFFFFF?text=Product+5",
+    image: "/src/assets/featruedCategories4.svg",
     title: "Designer Handbag",
     discount: "30% OFF",
   },
@@ -42,28 +50,35 @@ export const HomeDesktop = () => {
     <div className="min-h-screen">
       <GotoTop />
       <Header />
-      <div className="container mx-auto px-4 py-8 space-y-8">
-        <Carousel />
-
-        <div className="py-8">
-          <h2 className="text-2xl font-bold text-center mb-6">Featured Products</h2>
-          <CarouselProduct>
-            {productsData.map((product) => (
-              <div key={product.id} className="px-2">
-                <div className="product-card bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow duration-300">
-                  <div className="product-image-container h-48 relative">
-                    <img src={product.image} alt={product.title} className="w-full h-full object-cover" />
-                  </div>
-                  <div className="product-info p-4 text-center">
-                    <h3 className="text-sm font-medium text-gray-800 mb-1">{product.title}</h3>
-                    <p className="text-xs text-gray-600">{product.discount}</p>
+      <div className="flex gap-[20px] container mx-auto px-4 py-8 space-y-8">
+        <NavBar />
+        <div className="w-[calc(100%-288px)] flex flex-col gap-[16px]">
+          <Carousel />
+          <FlashSale />
+          <Promotion arrowPosition="right" />
+          <Promotion arrowPosition="left" />
+          <ProductPromoCarousel arrow autoplay={false} arrowPosition="left" />
+          <div className="py-8">
+            <h2 className="text-[20px] text-[#1A1A1A] font-bold mb-6">Featured categories</h2>
+            <CarouselProduct dots>
+              {productsData.map((product) => (
+                <div key={product.id} className="px-2">
+                  <div className="product-card bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow duration-300">
+                    <div className="product-image-container h-48 relative rounded-[12px]">
+                      <img src={product.image} alt={product.title} className="w-full h-full object-cover" />
+                    </div>
                   </div>
                 </div>
-              </div>
-            ))}
-          </CarouselProduct>
+              ))}
+            </CarouselProduct>
+          </div>
+          <Carousel />
+          <Suggestions />
         </div>
       </div>
+      <SmartMarketNews />
+      <MarketInfo />
+      <Footer />
     </div>
   );
 };

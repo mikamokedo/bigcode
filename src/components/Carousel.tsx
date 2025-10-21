@@ -13,23 +13,18 @@ interface SlideData {
 const slidesData: SlideData[] = [
   {
     id: 1,
-    image: "https://placehold.co/520x232/FFA500/FFFFFF?text=Slide+1",
+    image: "/src/assets/carousel1.png",
     alt: "Promotional slide 1",
   },
   {
     id: 2,
-    image: "https://placehold.co/520x232/FF69B4/FFFFFF?text=Slide+2",
+    image: "/src/assets/carousel2.png",
     alt: "Promotional slide 2",
   },
   {
     id: 3,
-    image: "https://placehold.co/520x232/00BFFF/FFFFFF?text=Slide+3",
+    image: "/src/assets/carousel3.png",
     alt: "Promotional slide 3",
-  },
-  {
-    id: 4,
-    image: "https://placehold.co/520x232/8A2BE2/FFFFFF?text=Slide+4",
-    alt: "Promotional slide 4",
   },
 ];
 
@@ -93,11 +88,13 @@ export const Carousel: React.FC<CarouselProps> = ({ arrow = false, dots = true, 
   };
 
   return (
-    <div className="max-w-6xl mx-auto carousel-container carousel-container-main w-full">
+    <div className="max-w-6xl mx-auto carousel-container carousel-container-main w-full relative">
+      <div className="absolute left-0 top-0 h-full w-16 bg-gradient-to-r from-white to-transparent z-10 pointer-events-none"></div>
+    <div className="absolute right-0 top-0 h-full w-16 bg-gradient-to-l from-white to-transparent z-10 pointer-events-none"></div>
       <Slider {...settings}>
         {slidesData.map((slide) => (
           <div key={slide.id}>
-            <div className="slide-item w-full h-48 sm:h-60 md:h-72 relative overflow-hidden">
+            <div className="aspect-[4/2] slide-item w-full h-48 sm:h-60 md:h-72 relative overflow-hidden">
               <img
                 src={slide.image}
                 alt={slide.alt}

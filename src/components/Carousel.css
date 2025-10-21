@@ -32,8 +32,8 @@
 
 .carousel-container .custom-dots li.slick-active div {
   background-color: #059669 !important;
-  width: 24px !important;
-  height: 8px !important;
+  width: 43px !important;
+  height: 6px !important;
   border-radius: 12px !important;
 }
 
@@ -104,7 +104,7 @@
 
 /* Achieve 16px visual gap with scaled slides */
 .carousel-container-main .slick-slide:not(.slick-center) {
-  transform: scale(0.9);
+  transform: scale(0.7);
   margin: 0 -8px;
 }
 
