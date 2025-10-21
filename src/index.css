@@ -14,6 +14,11 @@
   margin: 0 auto;
 }
 
+.container-mobile {
+  max-width: 375px;
+  margin: 0 auto;
+}
+
 ul {
   list-style: none;
   margin: 0;
